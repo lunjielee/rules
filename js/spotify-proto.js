@@ -63,7 +63,7 @@ function processMapObj(accountAttributesMapObj){
 
     // vip新增的
     accountAttributesMapObj['loudness-levels'] = {stringValue : '1:-9.0,0.0,3.0:-2.0'};
-    accountAttributesMapObj['payments-initial-campaign'] = {stringValue : 'web'};
+    accountAttributesMapObj['payments-initial-campaign'] = {stringValue : 'default'};
     accountAttributesMapObj['shuffle-eligible'] = {boolValue : true};
     accountAttributesMapObj['unrestricted'] = {boolValue : true};
     // 儿童不宜
@@ -83,7 +83,10 @@ function processMapObj(accountAttributesMapObj){
     // accountAttributesMapObj['ab-desktop-hide-follow'] = {boolValue : false};
 
     // 不确定的字段
-    // accountAttributesMapObj['social-session'] = {boolValue : true};
+    accountAttributesMapObj['social-session'] = {boolValue : true};
+    accountAttributesMapObj['social-session-free-tier'] = {boolValue : false};
+    accountAttributesMapObj['com.spotify.madprops.delivered.by.ucs'] = {boolValue : true};
+
     // accountAttributesMapObj['head-files-url'] = {stringValue : 'https://heads-fa.scdn.co/head/{file_id}'};
     // accountAttributesMapObj['publish-playlist'] = {boolValue : true};
 }
